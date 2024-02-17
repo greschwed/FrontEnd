@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Game</title>
+ </head>
+ <body>
+    
+ </body>
+ <script>
+    function mostraFrase(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function pulaLinha(){
+        document.write("<br>|| <br><br> || <br>")
+    }
+    var numVitorias = parseInt(prompt("Entre com o número de Vitórias"));
+    var numEmpates = parseInt(prompt("Digite o número de empates"));
+    mostraFrase("O Numero de Vitórias é " + numVitorias + "<br> Número de empates é " + numEmpates + "<br><br>Pontuação total = "+(numVitorias*3+numEmpates));
+
+</script>
+ </html>

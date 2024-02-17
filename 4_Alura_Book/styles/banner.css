@@ -1,0 +1,188 @@
+.banner{
+    background: var(--cor-degrade);
+    text-align: center;
+    padding: 1.5em 2em;
+    }
+.banner__titulo{
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.banner__texto{
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0.5em 0 1.5em 0;
+}
+.banner__pesquisa{
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-branco);
+    border-radius: 24px;
+    background-color: transparent;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 1em;
+    width: 100%;
+    height: 44px;
+
+}
+.banner__pesquisa::placeholder{
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background: url(../img/Pesquisa.svg) no-repeat;
+}
+.topicos_recentes_temas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+.topicos_recentes_titulo{
+    font-weight: 300;
+}
+.topicos_recentes_item{
+    color: var(--cor-branco);
+    background-color: var(--cor-laranja);
+    margin: 0.5em;
+    padding: 16px 16px;
+    color: var(--cor-branco);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.newsletter{
+    background-color: var(--cor-branco);
+    padding: 1.5em;
+}
+.newsletter__titulo,
+.newsletter__texto,
+.newsletter__signup{
+    background: var(--cor-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--fonte-principal);
+
+}
+.newsletter__titulo{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 0 0.5em 0;
+}
+.newsletter__descricao{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 0 0 1.5em 0;
+    
+}
+.newsletter__signup{
+    color: var(--cor-azul);
+    border: 1px solid #002F52;
+    border-radius: 24px;
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 90%;
+    height: 44px;
+    padding-left: 1em;
+
+
+}
+.newsletter__signup::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background: url(../img/Email.svg) no-repeat;
+    padding-left: 2.5em;
+}
+hr {
+    margin: 0;
+}
+
+@media screen and (min-width: 1024px){
+    .banner__titulo{
+        font-size: 36px;
+    }
+
+    .banner__pesquisa{
+        width: 50%;
+    }
+    .banner__pesquisa::placeholder{
+        background-position: 20%;
+    }
+
+    .topicos_recentes_temas{
+        width: 60%;
+        margin: 2em auto;
+    }
+    .topicos_recentes_titulo{
+        font-size: 24px;
+    }
+    .newsletter{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .newsletter__texto{
+        width: 370px;
+    }
+    .newsletter__titulo{
+        font-size: 24px;
+    }
+
+    .newsletter__signup{
+    width: 32%;
+    }
+
+
+}
+
+@media screen and (min-width: 1600px){
+
+.banner__pesquisa{
+    width: 30%;
+}
+.banner__pesquisa::placeholder{
+    background-position: 20%;
+}
+    
+.topicos_recentes_temas{
+    width: 35%;
+}
+
+.topicos_recentes_titulo{
+    font-size: 32px;
+    margin: 1.5em 0 0.5em 0;
+}
+.topicos_recentes_item{
+    font-size: 24px;
+}
+.newsletter{
+    padding: 4em 0 2em 0;
+}
+
+}
